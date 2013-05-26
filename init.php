@@ -45,8 +45,8 @@ class Af_Lackadaisy extends Plugin {
 
 						$entries = $xpath->query('(//div[@class="description")');
 						
-						if ($entries) {
-							$article["content"] = $article["content"] . "<br />" . $doc->saveXML($entries[0]);
+						for ($entries as $entry) {
+							$article["content"] = $article["content"] . "<br />" . $doc->saveXML($entry);
 						}
 
 						$article["plugin_data"] = "lackadaisy,$owner_uid:" . $article["plugin_data"];
