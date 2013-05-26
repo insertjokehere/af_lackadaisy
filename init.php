@@ -45,7 +45,7 @@ class Af_Lackadaisy extends Plugin {
 
 						$entries = $xpath->query('(//div[@class="description")');
 						
-						for ($entries as $entry) {
+						foreach ($entries as $entry) {
 							$article["content"] = $article["content"] . "<br />" . $doc->saveXML($entry);
 						}
 
