@@ -5,8 +5,8 @@ Tiny Tiny RSS plugin to embed Lackadaisy comics and news text in articles
 
 ## Installation
 
- cd $TTRSS-ROOT/plugins
- sudo -u $WWW-USER git clone git://github.com/insertjokehere/af_lackadaisy.git
+	cd $TTRSS-ROOT/plugins
+	sudo -u $WWW-USER git clone git://github.com/insertjokehere/af_lackadaisy.git
 
 replacing $TTRSS-ROOT with the root directory of your tt-rss install, and $WWW-USER with the username your webservice runs under (usually www-data).
 Then enable the plugin from the tt-rss preferences panel.
