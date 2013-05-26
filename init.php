@@ -43,7 +43,7 @@ class Af_Lackadaisy extends Plugin {
 					if ($basenode) {
 						$article["content"] = $doc->saveXML($basenode);
 
-						$entries = $xpath->query('(//div[@class="description")');
+						$entries = $xpath->query('(//div[@class="description"])');
 						
 						foreach ($entries as $entry) {
 							$article["content"] = $article["content"] . "<br />" . $doc->saveXML($entry);
